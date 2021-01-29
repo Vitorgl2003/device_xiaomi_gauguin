@@ -138,6 +138,16 @@ $(EGL_64_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(EGL_32_SYMLINKS) $(EGL_64_SYMLINKS)
 
+CNE_LIBS := libvndfwk_detect_jni.qti.so
+CNE_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/app/CneApp/lib/arm64/,$(notdir $(CNE_LIBS)))
+$(CNE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "CneApp lib link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /vendor/lib64/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(CNE_SYMLINKS)
+
 RFS_MDM_ADSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/mdm/adsp/
 $(RFS_MDM_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating RFS MDM ADSP folder structure: $@"
