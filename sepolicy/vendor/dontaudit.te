@@ -17,3 +17,6 @@ dontaudit {
   vendor_qti
   vendor_sensors_qti
 } vendor_diag_device:chr_file rw_file_perms;
+
+# untrusted_app shouldn't be allowed to read SELinux status
+dontaudit untrusted_app_all selinuxfs:file read;
