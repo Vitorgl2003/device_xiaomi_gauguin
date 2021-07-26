@@ -44,6 +44,9 @@ on init
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     start vendor.qseecomd
     start keymaster-4-0
+    
+    # Change permissions for /dev/diag
+    chmod 0666 /dev/diag
 
 on early-fs
     start vold
