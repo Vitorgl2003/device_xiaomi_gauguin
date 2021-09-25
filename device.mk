@@ -266,7 +266,6 @@ PRODUCT_PACKAGES += \
     fstab.emmc \
     fstab.emmc.ramdisk \
     init.mdm.sh \
-    init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
