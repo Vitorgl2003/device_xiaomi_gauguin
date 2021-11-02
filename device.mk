@@ -481,6 +481,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
 
+# Use speed tuning for performance critical applications
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI \
+    NexusLauncherRelease \
+    Lawnchair \
+    Launcher3QuickStep
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
