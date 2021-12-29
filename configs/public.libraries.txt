@@ -9,3 +9,5 @@ libnpu.so
 libhta_hexagon_runtime.so
 libalhLDC.so
 libcvp_common.so
+libc++.so
+libc++_shared.so
