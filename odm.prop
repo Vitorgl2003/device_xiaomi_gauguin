@@ -41,6 +41,7 @@ vendor.audio.feature.usb_offload_sidetone_volume.enable=false
 vendor.audio.feature.usb_offload.enable=true
 vendor.audio.feature.vbat.enable=true
 vendor.audio.feature.wsa.enable=false
+persist.vendor.audio.voicecall.speaker.stereo=false
 
 # ODM
 ro.vendor.qti.va_odm.support=1
