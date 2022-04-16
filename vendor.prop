@@ -69,6 +69,7 @@ debug.cpurend.vsync=false
 
 # Display
 debug.egl.hw=0
+debug.force_no_blanking=true
 debug.sdm.support_writeback=0
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
