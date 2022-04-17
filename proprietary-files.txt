@@ -1214,6 +1214,9 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 # RIL (IMS) from MIUI V13.0.3.0.SJSCNXM
 -system_ext/app/ImsRcsService/ImsRcsService.apk|7bb9b8ea25be9a725f6051e5e818d85ee4941e32
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|aa0adbfb8a0136fa6c9ef161aa4fce9c96c0d9fd
+system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar|6b0ed3e0171e1d84bc37e6e045d4a0657b37ff13
+system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar|43b72ae41bc9687defb9596bc9cca94893e41739
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|a5791aa90552999909e52648d576055a8c533397
 
 # RIL (IMS)
 -system_ext/priv-app/ims/ims.apk
