@@ -1,6 +1,9 @@
 # Charger
 ro.charger.enable_suspend=1
 
+# Disable Remote Keygaurd animation
+persist.wm.enable_remote_keyguard_animation=0
+
 # Display
 debug.sf.disable_backpressure=1
 qemu.sf.lcd_density=440
