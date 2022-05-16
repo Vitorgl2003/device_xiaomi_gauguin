@@ -157,6 +157,9 @@ persist.vendor.qcomsysd.enabled=1
 # RCS
 persist.rcs.supported=1
 
+# Recovery - Disable Possible Overrides from Source
+persist.sys.recovery_update=false
+
 # Refresh Rate
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.set_display_power_timer_ms=1000
