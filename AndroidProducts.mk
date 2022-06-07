@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_gauguin.mk
+    $(LOCAL_DIR)/spark_gauguin.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_gauguin-userdebug \
-    arrow_gauguin-eng
+    spark_gauguin-userdebug \
+    spark_gauguin-eng
