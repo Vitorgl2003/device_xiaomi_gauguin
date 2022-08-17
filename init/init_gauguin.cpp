@@ -55,6 +55,7 @@ static const char *build_keys_props[] =
 };
 
 void load_gauguin() {
+    property_override("ro.product.mod_device", "gauguin_global");
     property_override("ro.build.fingerprint", "Xiaomi/gauguin_global/gauguin:11/RKQ1.200826.002/V12.5.2.0.RJSMIXM:user/release-keys");
     property_override("ro.product.brand", "Xiaomi");
     property_override("ro.product.device", "gauguin");
@@ -63,6 +64,7 @@ void load_gauguin() {
     property_override("ro.boot.product.hardware.sku", "nfc");
 }
 void load_gauguinpro() {
+    property_override("ro.product.mod_device", "gauguin_global");
     property_override("ro.build.fingerprint", "Redmi/gauguinpro/gauguinpro:11/RKQ1.200826.002/V12.5.3.0.RJSCNXM:user/release-keys");
     property_override("ro.product.brand", "Redmi");
     property_override("ro.product.device", "gauguinpro");
@@ -71,12 +73,20 @@ void load_gauguinpro() {
     property_override("ro.boot.product.hardware.sku", "nfc");
 }
 void load_gauguininpro() {
+    property_override("ro.product.mod_device", "gauguin_in_global");
     property_override("ro.build.fingerprint", "Xiaomi/gauguininpro/gauguininpro:11/RKQ1.200826.002/V12.0.1.0.RJSINXM:user/release-keys");
     property_override("ro.product.brand", "Xiaomi");
     property_override("ro.product.device", "gauguininpro");
     property_override("ro.product.model", "M2007J17I");
     property_override("ro.product.marketname", "Mi 10i");
 }
+void load_miuicamera_properties() {
+    property_override("vendor.camera.aux.packagelist", "com.android.camera,org.codeaurora.snapcam");
+    property_override("persist.vendor.camera.privapp.list", "com.android.camera");
+    property_override("ro.com.google.lens.oem_camera_package", "com.android.camera");
+    property_override("ro.miui.notch", "1");
+}
+
 void vendor_load_properties() {
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
     if (region.find("CN") != std::string::npos)
@@ -92,4 +102,6 @@ void vendor_load_properties() {
 	  for (int i = 0; build_keys_props[i]; ++i) {
 		  property_override(build_keys_props[i], "release-keys");
 	  }
+/* Miui Camera */
+   load_miuicamera_properties();
 }
