@@ -214,6 +214,9 @@ telephony.lteOnCdmaDevice=1
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM7225
 
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
+
 # Time
 persist.timed.enable=true
 
